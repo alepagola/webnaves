@@ -253,7 +253,7 @@ header.custom-header {
 .hero-section {
     position: relative;
     background: url('../imagenes/indPetrolera.jpg') no-repeat center center/cover;
-    height: 100vh; 
+    height: 105vh; 
     display: flex;
     align-items: center;
     margin-top: -100px; 
