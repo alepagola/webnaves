@@ -51,4 +51,30 @@ document.addEventListener('DOMContentLoaded', () => {
             contactForm.reset();
         });
     }
+
+    // 4. CONTADORES ANIMADOS (Sección Nosotros)
+    const counters = document.querySelectorAll('.counter');
+    const speed = 100; // Velocidad de la animación (mientras más bajo, más rápido)
+
+    if (counters.length > 0) {
+        counters.forEach(counter => {
+            const updateCount = () => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText;
+                
+                // Calculamos el incremento
+                const inc = target / speed;
+
+                // Si el contador es menor al objetivo, sumamos
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + inc);
+                    setTimeout(updateCount, 20); // ms de delay por frame
+                } else {
+                    counter.innerText = target;
+                }
+            };
+            
+            updateCount();
+        });
+    }
 });

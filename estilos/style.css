@@ -663,7 +663,7 @@ footer p { font-size: 0.85rem; }
 .back-link {
     display: inline-flex; align-items: center;        
     color: rgba(255, 255, 255, 0.7); 
-    text-decoration: none; font-weight: 600; font-size: 1.1rem;          
+    text-decoration: none; font-weight: 600; font-size: 1.1rem;           
     transition: all 0.3s ease;  
 }
 .back-link i { margin-right: 8px; transition: transform 0.3s ease; }
@@ -766,4 +766,16 @@ footer p { font-size: 0.85rem; }
     background-color: var(--brand-blue);
     color: white;
     transform: rotateY(360deg); /* Pequeño giro al estilo "Clientes" */
+}
+
+/* =========================================
+   11. NUEVOS CONTADORES (NOSOTROS)
+   ========================================= */
+.counter-section {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
+
+.counter-section p {
+    font-weight: 500;
+    letter-spacing: 1px;
 }
