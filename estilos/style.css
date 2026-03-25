@@ -623,9 +623,18 @@ header.custom-header {
    8. FOOTER & UTILIDADES
    ========================================= */
 .footer-logo-mega {
-    width: 90%; max-width: 380px; height: auto;
-    object-fit: contain; display: block; margin: 0 auto; 
+    width: 90%; 
+    max-width: 350px; 
+    height: auto;
+    object-fit: contain; 
+    display: block; 
+    margin: 0 auto; 
 }
+
+@media (min-width: 992px) {
+    .footer-logo-mega { margin: 0; }
+}
+
 .footer-cert-img {
     height: 80px; width: auto;
     transition: transform 0.3s ease;
@@ -669,6 +678,16 @@ footer p { font-size: 0.85rem; }
 .back-link i { margin-right: 8px; transition: transform 0.3s ease; }
 .back-link:hover { color: #ffffff; text-decoration: none; }
 .back-link:hover i { transform: translateX(-5px); }
+
+/* Íconos Sociales Footer */
+.social-icon {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.social-icon:hover {
+    transform: scale(1.2);
+    color: var(--brand-light) !important;
+}
 
 /* =========================================
    9. MEDIA QUERIES (AJUSTES FINALES)
