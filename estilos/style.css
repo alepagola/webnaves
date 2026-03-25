@@ -216,6 +216,30 @@ header.custom-header {
     to { opacity: 1; transform: translateY(0); }
 }
 
+/* ---------------------------------------------------
+   NUEVO: Ajustes para Notebooks (pantallas medianas)
+   --------------------------------------------------- */
+@media (max-width: 1400px) and (min-width: 992px) {
+    .custom-navbar {
+        padding: 0.5rem 1.5rem;
+        width: 98%; /* Usamos casi todo el ancho de la pantalla para que tengan espacio */
+    }
+    .custom-nav-links {
+        gap: 1.2rem; /* Separación cómoda, ni muy juntos ni muy separados */
+    }
+    .custom-nav-links li a {
+        font-size: 0.95rem; /* Letra de buen tamaño, legible */
+    }
+    .btn-nav-contacto {
+        padding: 8px 18px;
+        font-size: 0.95rem;
+    }
+    .logo-img {
+        height: 55px; /* Logo equilibrado */
+        margin-right: 10px;
+    }
+}
+
 @media (max-width: 991px) {
     .custom-menu-btn { display: block; }
     
@@ -253,11 +277,12 @@ header.custom-header {
 .hero-section {
     position: relative;
     background: url('../imagenes/indPetrolera.jpg') no-repeat center center/cover;
-    height: 105vh; 
+    min-height: 105vh; /* <-- EL CAMBIO CLAVE: min-height en vez de height */
     display: flex;
     align-items: center;
     margin-top: -100px; 
     padding-top: 250px; 
+    padding-bottom: 80px; /* <-- Le agregamos aire abajo para que nunca se pegue */
 }
 
 .hero-overlay {
@@ -797,4 +822,20 @@ footer p { font-size: 0.85rem; }
 .counter-section p {
     font-weight: 500;
     letter-spacing: 1px;
+}
+
+/* =========================================
+   12. CORRECCIONES DE TEXTO
+   ========================================= */
+.word-break-custom {
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    .solution-card h4.word-break-custom {
+        font-size: 1.25rem;
+    }
 }
