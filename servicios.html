@@ -58,7 +58,17 @@
         </nav>
     </header>
 
-    <header class="page-header page-header-clients">
+    <header class="page-header page-header-clients" style="
+  position: relative;
+  margin-top: -100px;
+  padding-top: 250px;
+  height: 105vh;
+  display: flex;
+  align-items: center;
+  background: 
+    linear-gradient(to bottom, rgba(15, 23, 42, 0.8), rgba(0, 68, 129, 0.6)), 
+    url('./imagenes/servicios.jpg') no-repeat center center/cover;
+">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -67,12 +77,17 @@
                     <p class="lead" data-aos="fade-up" data-aos-delay="200">
                         Ingeniería aplicada para optimizar el rendimiento de sus equipos
                     </p>
+                    <div data-aos="fade-up" data-aos-delay="400">
+                        <a href="#servicios-content" class="scroll-down-btn">
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <main class="container mb-5 overflow-hidden">
+    <main class="container mb-5 overflow-hidden" id="servicios-content">
         
         <div class="row justify-content-center text-center mb-5" data-aos="fade-up">
             <div class="col-lg-9">
@@ -106,7 +121,7 @@
                 </ul>
             </div>
             <div class="col-lg-6">
-                <img src="./imagenes/reparacion.png" class="img-fluid rounded-5 shadow-lg service-img" alt="Transformación de Bombas"
+                <img src="./imagenes/transformacion.jpg" class="img-fluid rounded-5 shadow-lg service-img" alt="Transformación de Bombas"
                      onerror="this.src='https://images.unsplash.com/photo-1581092921461-eab62e97a783?auto=format&fit=crop&w=800&q=80'">
             </div>
         </div>
@@ -152,7 +167,7 @@
                 </ul>
             </div>
             <div class="col-lg-6">
-                <img src="./imagenes/reparacionBomba.png" class="img-fluid rounded-5 shadow-lg service-img" alt="Reparación de Bombas">
+                <img src="./imagenes/reparacion.jpg" class="img-fluid rounded-5 shadow-lg service-img" alt="Reparación de Bombas">
             </div>
         </div>
 
@@ -191,7 +206,7 @@
                 </ul>
             </div>
             <div class="col-lg-6">
-                <img src="./imagenes/imagenPlanos.png" class="img-fluid rounded-5 shadow-lg service-img" alt="Planos de Ingeniería">
+                <img src="./imagenes/planos.jpg" class="img-fluid rounded-5 shadow-lg service-img" alt="Planos de Ingeniería">
             </div>
         </div>
 
@@ -215,7 +230,7 @@
                 </p>
             </div>
             <div class="col-lg-6">
-                <img src="./imagenes/camionetas.png" class="img-fluid rounded-5 shadow-lg service-img" alt="Logística y Entregas">
+                <img src="./imagenes/camioneta.jpg" class="img-fluid rounded-5 shadow-lg service-img" alt="Logística y Entregas">
             </div>
         </div>
 

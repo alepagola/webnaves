@@ -222,20 +222,20 @@ header.custom-header {
 @media (max-width: 1400px) and (min-width: 992px) {
     .custom-navbar {
         padding: 0.5rem 1.5rem;
-        width: 98%; /* Usamos casi todo el ancho de la pantalla para que tengan espacio */
+        width: 98%; 
     }
     .custom-nav-links {
-        gap: 1.2rem; /* Separación cómoda, ni muy juntos ni muy separados */
+        gap: 1.2rem; 
     }
     .custom-nav-links li a {
-        font-size: 0.95rem; /* Letra de buen tamaño, legible */
+        font-size: 0.95rem; 
     }
     .btn-nav-contacto {
         padding: 8px 18px;
         font-size: 0.95rem;
     }
     .logo-img {
-        height: 55px; /* Logo equilibrado */
+        height: 55px; 
         margin-right: 10px;
     }
 }
@@ -277,12 +277,12 @@ header.custom-header {
 .hero-section {
     position: relative;
     background: url('../imagenes/indPetrolera.jpg') no-repeat center center/cover;
-    min-height: 105vh; /* <-- EL CAMBIO CLAVE: min-height en vez de height */
+    min-height: 105vh; 
     display: flex;
     align-items: center;
     margin-top: -100px; 
     padding-top: 250px; 
-    padding-bottom: 80px; /* <-- Le agregamos aire abajo para que nunca se pegue */
+    padding-bottom: 80px; 
 }
 
 .hero-overlay {
@@ -316,6 +316,59 @@ header.custom-header {
 .page-header-clients {
     background: linear-gradient(to right, rgba(0, 68, 129, 0.9), rgba(15, 23, 42, 0.8)), 
                 url('../imagenes/industria-fondo.jpg') center/cover no-repeat;
+}
+
+/* Botón para bajar en Clientes/Servicios (Solo flecha) */
+.scroll-down-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    margin-top: 20px;
+    color: white;
+    text-decoration: none;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    animation: bounce 2s infinite;
+}
+
+.scroll-down-btn:hover {
+    background-color: white;
+    color: var(--brand-blue);
+    border-color: white;
+    transform: translateY(5px);
+}
+
+/* NUEVO: Botón destacado para Repuestos (Con Texto) */
+.btn-hero-repuestos {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 40px;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-hero-repuestos:hover {
+    background-color: white;
+    color: var(--brand-blue) !important;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-10px);}
+    60% {transform: translateY(-5px);}
 }
 
 /* Variación: Header Repuestos (Con ajuste de padding) */
@@ -520,10 +573,10 @@ header.custom-header {
         
         /* Ajuste para el carrusel de producto */
         .product-carousel-img {
-            height: 450px; /* Altura fija para mantener el tamaño */
-            object-fit: contain; /* Muestra la imagen completa sin recortar */
+            height: 450px; 
+            object-fit: contain; 
             width: 100%;
-            background-color: #f8f9fa; /* Color de fondo opcional */
+            background-color: #f8f9fa; 
         }
         
         /* Ajuste para móviles */
@@ -561,7 +614,7 @@ header.custom-header {
 
 .slide-track {
     display: flex;
-    width: calc(250px * 14); /* Ajustar según cantidad de logos */
+    width: calc(250px * 14); 
     animation: scroll 40s linear infinite; 
 }
 .slide-track:hover { animation-play-state: paused; }
@@ -740,24 +793,23 @@ footer p { font-size: 0.85rem; }
 
 /* Tarjeta contenedora */
 .product-category-card {
-    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); /* Efecto "físico" suave */
-    border: 1px solid rgba(0, 68, 129, 0.08); /* Borde azul muy sutil */
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); 
+    border: 1px solid rgba(0, 68, 129, 0.08); 
 }
 
 .product-category-card:hover {
-    transform: translateY(-12px); /* Se levanta más */
-    box-shadow: 0 25px 50px rgba(0, 42, 80, 0.15) !important; /* Sombra azulada profunda */
-    border-color: var(--nav-accent); /* Borde se ilumina */
+    transform: translateY(-12px); 
+    box-shadow: 0 25px 50px rgba(0, 42, 80, 0.15) !important; 
+    border-color: var(--nav-accent); 
 }
 
 /* Contenedor e Imagen */
 .product-img-wrapper {
-    height: 300px; /* Un poco más altas para impacto */
+    height: 300px; 
     overflow: hidden;
     position: relative;
 }
 
-/* Capa de degradado sobre la imagen para que el texto blanco se lea mejor si lo hubiera, y dar atmósfera */
 .product-img-wrapper::after {
     content: '';
     position: absolute;
@@ -770,11 +822,11 @@ footer p { font-size: 0.85rem; }
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.8s cubic-bezier(0.19, 1, 0.22, 1); /* Zoom muy suave y lento */
+    transition: transform 0.8s cubic-bezier(0.19, 1, 0.22, 1); 
 }
 
 .product-category-card:hover .product-img-wrapper img {
-    transform: scale(1.12); /* Zoom in al hacer hover */
+    transform: scale(1.12); 
 }
 
 /* Badge flotante más elegante */
@@ -796,7 +848,7 @@ footer p { font-size: 0.85rem; }
 .product-icon-circle {
     width: 70px;
     height: 70px;
-    background-color: rgba(56, 189, 248, 0.1); /* Azul claro transparente */
+    background-color: rgba(56, 189, 248, 0.1); 
     color: var(--brand-blue);
     border-radius: 50%;
     display: flex;
@@ -809,7 +861,7 @@ footer p { font-size: 0.85rem; }
 .product-category-card:hover .product-icon-circle {
     background-color: var(--brand-blue);
     color: white;
-    transform: rotateY(360deg); /* Pequeño giro al estilo "Clientes" */
+    transform: rotateY(360deg); 
 }
 
 /* =========================================
