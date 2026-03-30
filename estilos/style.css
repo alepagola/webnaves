@@ -890,4 +890,8 @@ footer p { font-size: 0.85rem; }
     .solution-card h4.word-break-custom {
         font-size: 1.25rem;
     }
+    .btn-download-iso {
+        padding: 12px 18px;
+        letter-spacing: 0px;
+    }
 }
