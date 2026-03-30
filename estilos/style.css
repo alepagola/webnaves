@@ -217,7 +217,7 @@ header.custom-header {
 }
 
 /* ---------------------------------------------------
-   NUEVO: Ajustes para Notebooks (pantallas medianas)
+   Ajustes para Notebooks (pantallas medianas)
    --------------------------------------------------- */
 @media (max-width: 1400px) and (min-width: 992px) {
     .custom-navbar {
@@ -240,6 +240,9 @@ header.custom-header {
     }
 }
 
+/* ---------------------------------------------------
+   AJUSTES PARA CELULARES (Menú Responsive y Dropdown)
+   --------------------------------------------------- */
 @media (max-width: 991px) {
     .custom-menu-btn { display: block; }
     
@@ -266,6 +269,38 @@ header.custom-header {
         transform: translateY(0);
         opacity: 1;
         visibility: visible;
+    }
+
+    /* --- CORRECCIONES PARA EL DROPDOWN EN CELULAR --- */
+    .dropdown-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .dropdown-menu-hover {
+        position: static; 
+        background-color: rgba(0, 0, 0, 0.2); 
+        box-shadow: none;
+        padding: 10px 0;
+        margin-top: 15px;
+        min-width: 100%;
+        border-radius: 10px;
+    }
+
+    .dropdown-menu-hover li a {
+        text-align: center;
+        padding: 10px 20px;
+        border-bottom: none;
+    }
+
+    .dropdown-menu-hover li a:hover {
+        background-color: transparent;
+        padding-left: 20px; 
+        color: var(--nav-accent) !important;
+    }
+
+    .custom-nav-links .dropdown-item ul[style] {
+        left: 0 !important;
     }
 }
 
