@@ -311,7 +311,7 @@ header.custom-header {
 /* Hero Principal (Index) */
 .hero-section {
     position: relative;
-    background: url('../imagenes/indPetrolera.jpg') no-repeat center center/cover;
+    background: url('../imagenes/indPetrolera.webp') no-repeat center center/cover;
     min-height: 105vh; 
     display: flex;
     align-items: center;
