@@ -107,6 +107,7 @@ header.custom-header {
     transition: color 0.3s ease;
     position: relative;
     padding: 5px 0;
+    white-space: nowrap; /* <-- ¡Esta es la línea que lo soluciona! */
 }
 
 .custom-nav-links li a:hover,
