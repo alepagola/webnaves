@@ -344,14 +344,12 @@ header.custom-header {
 
 /* Variación: Header Nosotros */
 .page-header-about {
-    background: linear-gradient(to right, rgba(0, 68, 129, 0.9), rgba(15, 23, 42, 0.85)), 
-                url('../imagenes/equipo-fondo.jpg') center/cover no-repeat;
+    background: linear-gradient(to right, rgba(0, 68, 129, 0.9), rgba(15, 23, 42, 0.85))
 }
 
 /* Variación: Header Clientes */
 .page-header-clients {
-    background: linear-gradient(to right, rgba(0, 68, 129, 0.9), rgba(15, 23, 42, 0.8)), 
-                url('../imagenes/industria-fondo.jpg') center/cover no-repeat;
+    background: linear-gradient(to right, rgba(0, 68, 129, 0.9), rgba(15, 23, 42, 0.8))
 }
 
 /* Botón para bajar en Clientes/Servicios (Solo flecha) */
