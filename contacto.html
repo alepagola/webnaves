@@ -28,7 +28,6 @@
   <meta name="twitter:description" content="Consultenos sobre bombas a tornillo, repuestos y servicios. Burzaco, Buenos Aires.">
   <meta name="twitter:image" content="https://www.navesdelsur.com/imagenes/og-image.jpg">
  
-  <!-- ✅ Schema: ContactPage + LocalBusiness con horarios -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -128,12 +127,10 @@
   </nav>
 </header>
  
- 
 <header class="page-header page-header-clients" role="banner">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8">
-        <!-- ✅ H1 optimizado -->
         <h1 data-aos="fade-down" data-aos-duration="1000">Consulte por Bombas a Tornillo y Repuestos</h1>
         <div class="section-divider bg-white mx-auto"></div>
         <p class="lead" data-aos="fade-up" data-aos-delay="200">
@@ -147,12 +144,17 @@
 <main class="container mb-5" style="margin-top:-50px;position:relative;z-index:2;">
   <div class="row g-5">
  
-    <!-- Formulario -->
     <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
       <div class="bg-white rounded-5 shadow-lg p-4 p-md-5 h-100 border border-light">
         <h2 class="mb-2 fw-bold text-custom-blue" style="font-size:1.4rem;">Envíenos su consulta</h2>
         <p class="text-muted mb-4">Complete el formulario y un asesor técnico se pondrá en contacto a la brevedad.</p>
-        <form action="#" method="POST" novalidate aria-label="Formulario de contacto">
+        
+        <form name="contacto-naves" method="POST" data-netlify="true" netlify-honeypot="bot-field" aria-label="Formulario de contacto">
+          
+          <p class="visually-hidden">
+            <label>No completar esto si eres humano: <input name="bot-field" /></label>
+          </p>
+
           <div class="row g-3">
             <div class="col-md-6">
               <div class="form-floating">
@@ -194,7 +196,6 @@
       </div>
     </div>
  
-    <!-- Info de contacto -->
     <div class="col-lg-5" data-aos="fade-left" data-aos-delay="200">
       <div class="h-100 d-flex flex-column justify-content-center ps-lg-4 mt-4 mt-lg-0">
         <div class="mb-5">
@@ -244,7 +245,6 @@
           </address>
         </div>
  
-        <!-- Horario -->
         <div class="bg-custom-blue text-white p-4 rounded-4 shadow-sm position-relative overflow-hidden">
           <div style="position:absolute;right:-20px;top:-20px;font-size:5rem;opacity:0.1;" aria-hidden="true"><i class="fas fa-clock"></i></div>
           <h3 class="fw-bold mb-3" style="font-size:1.1rem;">Horario de Atención</h3>
@@ -261,10 +261,8 @@
         </div>
       </div>
     </div>
- 
   </div>
  
-  <!-- Mapa Google Maps -->
   <div class="row mt-5 pt-4" data-aos="zoom-in">
     <div class="col-12">
       <h2 class="fw-bold text-center mb-4" style="font-size:1.3rem;">Cómo Llegar a Nuestra Planta</h2>
