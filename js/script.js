@@ -42,15 +42,48 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 3. VALIDACIÓN SIMPLE DE FORMULARIO
-    const contactForm = document.querySelector('form');
+    // 3. ENVÍO DE FORMULARIO A NETLIFY CON MODAL BOOTSTRAP
+    const contactForm = document.getElementById('formContacto');
+    const btnEnviar = document.getElementById('btnEnviar');
+    
+    // Inicializamos el modal de Bootstrap (usando el JS que ya tenés cargado)
+    const miModal = document.getElementById('modalExito') ? new bootstrap.Modal(document.getElementById('modalExito')) : null;
+
     if(contactForm){
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            alert('Mensaje enviado correctamente. Gracias por contactar a Naves Del Sur.');
-            contactForm.reset();
+
+            // Deshabilitamos el botón y ponemos estado de carga
+            btnEnviar.disabled = true;
+            const originalContent = btnEnviar.innerHTML;
+            btnEnviar.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span> Enviando...';
+
+            const formData = new FormData(contactForm);
+
+            // Envío asíncrono a Netlify
+            fetch("/", {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: new URLSearchParams(formData).toString(),
+            })
+            .then(() => {
+                // Si sale bien, mostramos el modal lindo de Bootstrap
+                if(miModal) miModal.show();
+                contactForm.reset();
+            })
+            .catch((error) => {
+                // Si falla la red, volvemos al alert simple por seguridad
+                alert('Hubo un error de conexión. Por favor intente nuevamente.');
+                console.error('Netlify Error:', error);
+            })
+            .finally(() => {
+                // Reestablecemos el botón
+                btnEnviar.disabled = false;
+                btnEnviar.innerHTML = originalContent;
+            });
         });
     }
+
 
     // 4. CONTADORES ANIMADOS (Sección Nosotros)
     const counters = document.querySelectorAll('.counter');

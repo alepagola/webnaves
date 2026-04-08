@@ -930,8 +930,29 @@ footer p { font-size: 0.85rem; }
     }
 }
 
+
+
 /* =========================================
-   13. BOTÓN VIDEO FLOTANTE Y MODAL
+   13. AVISOS Y MODAL DE ÉXITO (FORMULARIO DE CONTACTO)
+   ========================================= */
+#modalExito .modal-content {
+    border-top: 8px solid var(--brand-light) !important; /* Tu celeste de marca */
+}
+
+#modalExito .text-success {
+    color: var(--brand-light) !important;
+}
+
+#modalExito .btn-primary {
+    background-color: var(--brand-blue);
+    border: none;
+}
+
+#modalExito .btn-primary:hover {
+    background-color: var(--brand-dark);
+}
+/* =========================================
+   14. BOTÓN VIDEO FLOTANTE Y MODAL
    ========================================= */
 .btn-video-floating {
     position: fixed;

@@ -149,7 +149,7 @@
         <h2 class="mb-2 fw-bold text-custom-blue" style="font-size:1.4rem;">Envíenos su consulta</h2>
         <p class="text-muted mb-4">Complete el formulario y un asesor técnico se pondrá en contacto a la brevedad.</p>
         
-        <form name="contacto-naves" method="POST" data-netlify="true" netlify-honeypot="bot-field" aria-label="Formulario de contacto">
+        <form id="formContacto" name="contacto-naves" method="POST" data-netlify="true" netlify-honeypot="bot-field" aria-label="Formulario de contacto">
           
           <p class="visually-hidden">
             <label>No completar esto si eres humano: <input name="bot-field" /></label>
@@ -187,7 +187,7 @@
               </div>
             </div>
             <div class="col-12 mt-4">
-              <button type="submit" class="btn btn-primary rounded-pill w-100 py-3 fw-bold shadow-sm hover-scale">
+              <button type="submit" id="btnEnviar" class="btn btn-primary rounded-pill w-100 py-3 fw-bold shadow-sm hover-scale">
                 <i class="fas fa-paper-plane me-2" aria-hidden="true"></i> Enviar Consulta
               </button>
             </div>
@@ -281,6 +281,21 @@
     </div>
   </div>
 </main>
+
+<div class="modal fade" id="modalExito" tabindex="-1" aria-labelledby="modalExitoLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg rounded-5">
+      <div class="modal-body text-center p-5">
+        <div class="mb-4">
+          <i class="fas fa-check-circle text-success" style="font-size: 4rem;"></i>
+        </div>
+        <h3 class="fw-bold text-custom-blue" id="modalExitoLabel">¡Consulta Enviada!</h3>
+        <p class="text-muted">Gracias por contactar a Naves Del Sur. En breve nos comunicaremos con usted.</p>
+        <button type="button" class="btn btn-primary rounded-pill px-5 mt-3" data-bs-dismiss="modal">Entendido</button>
+      </div>
+    </div>
+  </div>
+</div>
  
 <footer class="bg-dark text-white pt-5 pb-3 mt-auto">
   <div class="container text-center text-md-start">
