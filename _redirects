@@ -1,0 +1,15 @@
+# Redirecciones para rescatar los links sin index.php
+/productos/bombas_petroleras            /categorias/bombas-petroleras.html    301
+/productos/bombas-petroleras            /categorias/bombas-petroleras.html    301
+/productos/bombas_industriales          /categorias/bombas-industriales.html  301
+/productos/bombas-industriales          /categorias/bombas-industriales.html  301
+/productos/bombas_sanitarias            /categorias/bombas-sanitarias.html    301
+/productos/bombas-sanitarias            /categorias/bombas-sanitarias.html    301
+/productos/bombas_dosificadoras         /categorias/bombas-dosificadoras.html 301
+/productos/bombas-dosificadoras         /categorias/bombas-dosificadoras.html 301
+
+# Redirecciones para rescatar los links con index.php (por si las dudas)
+/index.php/productos/bombas-petroleras   /categorias/bombas-petroleras.html    301
+/index.php/productos/bombas-industriales  /categorias/bombas-industriales.html  301
+/index.php/productos/bombas-sanitarias    /categorias/bombas-sanitarias.html    301
+/index.php/productos/bombas-dosificadoras /categorias/bombas-dosificadoras.html 301
