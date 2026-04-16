@@ -139,7 +139,7 @@
                     <h3 class="mb-2 fw-bold text-custom-blue">Send Us a Message</h3>
                     <p class="text-muted mb-4">Fill out the form and a technical advisor will contact you shortly.</p>
                     
-                    <form id="formContactoEn" name="contacto-naves-en" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                    <form id="formContacto" name="contacto-naves-en" method="POST" data-netlify="true" netlify-honeypot="bot-field">
                         <p class="visually-hidden">
                             <label>Don't fill this out if you're human: <input name="bot-field" /></label>
                         </p>
@@ -240,13 +240,28 @@
                  <h2 class="fw-bold text-center mb-4" style="font-size:1.3rem;">How to Find Our Plant</h2>
                  <div class="ratio ratio-21x9 shadow-lg rounded-5 overflow-hidden border border-white">
                      <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3275.94314782245!2d-58.3853!3d-34.8353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDUwJzA3LjEiUyA1OMKwMjMnMDcuMSJX!5e0!3m2!1sen!2sar!4v1620000000000!5m2!1sen!2sar" 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3275.5898033621535!2d-58.3858485!3d-34.8333333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd4a93f773323%3A0x899d54e47769229e!2sFrancisco%20Cafferata%203294%2C%20B1852%20Burzaco%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1713286300000!5m2!1ses!2sar" 
                         width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" title="Naves Del Sur Location">
                      </iframe>
                 </div>
               </div>
         </div>
     </main>
+
+    <div class="modal fade" id="modalExito" tabindex="-1" aria-labelledby="modalExitoLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow-lg rounded-5">
+          <div class="modal-body text-center p-5">
+            <div class="mb-4">
+              <i class="fas fa-check-circle text-success" style="font-size: 4rem;"></i>
+            </div>
+            <h3 class="fw-bold text-custom-blue" id="modalExitoLabel">Inquiry Sent!</h3>
+            <p class="text-muted">Thank you for contacting Naves Del Sur. Our technical team will get back to you shortly.</p>
+            <button type="button" class="btn btn-primary rounded-pill px-5 mt-3" data-bs-dismiss="modal">Understood</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer class="bg-dark text-white pt-5 pb-3 mt-auto">
         <div class="container text-center text-md-start">

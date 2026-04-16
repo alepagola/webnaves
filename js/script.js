@@ -42,42 +42,40 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 3. ENVÍO DE FORMULARIO A NETLIFY CON MODAL BOOTSTRAP
-    const contactForm = document.getElementById('formContacto');
+    // 3. ENVÍO DE FORMULARIO A NETLIFY (Multilenguaje)
+    const contactForm = document.getElementById('formContacto'); // Vamos a unificar este ID
     const btnEnviar = document.getElementById('btnEnviar');
-    
-    // Inicializamos el modal de Bootstrap (usando el JS que ya tenés cargado)
     const miModal = document.getElementById('modalExito') ? new bootstrap.Modal(document.getElementById('modalExito')) : null;
 
     if(contactForm){
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
 
-            // Deshabilitamos el botón y ponemos estado de carga
+            // Detectamos el idioma de la página (esto es muy "Systems")
+            const isEn = document.documentElement.lang === 'en';
+            const loadingText = isEn ? 'Sending...' : 'Enviando...';
+
             btnEnviar.disabled = true;
             const originalContent = btnEnviar.innerHTML;
-            btnEnviar.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span> Enviando...';
+            btnEnviar.innerHTML = `<span class="spinner-border spinner-border-sm me-2"></span> ${loadingText}`;
 
             const formData = new FormData(contactForm);
 
-            // Envío asíncrono a Netlify
             fetch("/", {
                 method: "POST",
                 headers: { "Content-Type": "application/x-www-form-urlencoded" },
                 body: new URLSearchParams(formData).toString(),
             })
             .then(() => {
-                // Si sale bien, mostramos el modal lindo de Bootstrap
                 if(miModal) miModal.show();
                 contactForm.reset();
             })
             .catch((error) => {
-                // Si falla la red, volvemos al alert simple por seguridad
-                alert('Hubo un error de conexión. Por favor intente nuevamente.');
+                const errorMsg = isEn ? 'Connection error. Please try again.' : 'Hubo un error de conexión. Por favor intente nuevamente.';
+                alert(errorMsg);
                 console.error('Netlify Error:', error);
             })
             .finally(() => {
-                // Reestablecemos el botón
                 btnEnviar.disabled = false;
                 btnEnviar.innerHTML = originalContent;
             });
