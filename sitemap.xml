@@ -21,12 +21,15 @@
 
   <url><loc>https://www.navesdelsur.com/bombas/detalle-linea-adp.html</loc><priority>0.6</priority></url>
   <url><loc>https://www.navesdelsur.com/bombas/detalle-linea-anp.html</loc><priority>0.6</priority></url>
+  <url><loc>https://www.navesdelsur.com/bombas/detalle-linea-ap.html</loc><priority>0.6</priority></url>
   <url><loc>https://www.navesdelsur.com/bombas/detalle-linea-ffa.html</loc><priority>0.6</priority></url>
   <url><loc>https://www.navesdelsur.com/bombas/detalle-linea-ffaj.html</loc><priority>0.6</priority></url>
+  <url><loc>https://www.navesdelsur.com/bombas/detalle-linea-ffs.html</loc><priority>0.6</priority></url>
   <url><loc>https://www.navesdelsur.com/bombas/detalle-linea-i.html</loc><priority>0.6</priority></url>
   <url><loc>https://www.navesdelsur.com/bombas/detalle-linea-j.html</loc><priority>0.6</priority></url>
   <url><loc>https://www.navesdelsur.com/bombas/detalle-linea-nea.html</loc><priority>0.6</priority></url>
   <url><loc>https://www.navesdelsur.com/bombas/detalle-linea-neaVertical.html</loc><priority>0.6</priority></url>
+  <url><loc>https://www.navesdelsur.com/bombas/detalle-linea-nes.html</loc><priority>0.6</priority></url>
 
   <url>
     <loc>https://www.navesdelsur.com/en/index.html</loc>
@@ -37,6 +40,8 @@
   <url><loc>https://www.navesdelsur.com/en/productos.html</loc><priority>0.7</priority></url>
   <url><loc>https://www.navesdelsur.com/en/repuestos.html</loc><priority>0.7</priority></url>
   <url><loc>https://www.navesdelsur.com/en/servicios.html</loc><priority>0.7</priority></url>
+  <url><loc>https://www.navesdelsur.com/en/clientes.html</loc><priority>0.6</priority></url>
+  <url><loc>https://www.navesdelsur.com/en/nosotros.html</loc><priority>0.6</priority></url>
   <url><loc>https://www.navesdelsur.com/en/contacto.html</loc><priority>0.6</priority></url>
 
   <url><loc>https://www.navesdelsur.com/en/categorias/bombas-industriales.html</loc><priority>0.7</priority></url>
@@ -46,6 +51,14 @@
 
   <url><loc>https://www.navesdelsur.com/en/bombas/detalle-linea-adp.html</loc><priority>0.5</priority></url>
   <url><loc>https://www.navesdelsur.com/en/bombas/detalle-linea-anp.html</loc><priority>0.5</priority></url>
+  <url><loc>https://www.navesdelsur.com/en/bombas/detalle-linea-ap.html</loc><priority>0.5</priority></url>
+  <url><loc>https://www.navesdelsur.com/en/bombas/detalle-linea-ffa.html</loc><priority>0.5</priority></url>
+  <url><loc>https://www.navesdelsur.com/en/bombas/detalle-linea-ffaj.html</loc><priority>0.5</priority></url>
+  <url><loc>https://www.navesdelsur.com/en/bombas/detalle-linea-ffs.html</loc><priority>0.5</priority></url>
+  <url><loc>https://www.navesdelsur.com/en/bombas/detalle-linea-i.html</loc><priority>0.5</priority></url>
+  <url><loc>https://www.navesdelsur.com/en/bombas/detalle-linea-j.html</loc><priority>0.5</priority></url>
   <url><loc>https://www.navesdelsur.com/en/bombas/detalle-linea-nea.html</loc><priority>0.5</priority></url>
+  <url><loc>https://www.navesdelsur.com/en/bombas/detalle-linea-neaVertical.html</loc><priority>0.5</priority></url>
+  <url><loc>https://www.navesdelsur.com/en/bombas/detalle-linea-nes.html</loc><priority>0.5</priority></url>
 
 </urlset>

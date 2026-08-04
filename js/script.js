@@ -113,4 +113,11 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // 6. AÑO DE COPYRIGHT AUTOMÁTICO (Footer)
+    const copyrightYearEls = document.querySelectorAll('.copyright-year');
+    if (copyrightYearEls.length > 0) {
+        const currentYear = new Date().getFullYear();
+        copyrightYearEls.forEach(el => { el.textContent = currentYear; });
+    }
 });

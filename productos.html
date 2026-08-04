@@ -136,8 +136,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
   </script>
  
+  <!-- Performance: preload imagen hero -->
+  <link rel="preload" as="image" href="./imagenes/img16.webp">
+
   <link href="./estilos/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
   <link href="./estilos/aos.css" rel="stylesheet">
@@ -356,7 +358,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 
                 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center justify-content-lg-start">
                     <a href="./index.html" class="text-decoration-none w-100">
-                        <img src="./imagenes/naves2.png" alt="Naves del Sur" class="footer-logo-mega">
+                        <img loading="lazy" src="./imagenes/naves2.png" alt="Naves del Sur" class="footer-logo-mega">
                     </a>
                 </div>
 
@@ -408,7 +410,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="col-lg-2 col-md-12 mb-4 mb-lg-0 d-flex flex-column align-items-center align-items-lg-end gap-3">
                     <img src="./imagenes/madeInArgentina.png" alt="Hecho en Argentina" class="img-fluid footer-cert-img">
                     <div class="d-flex align-items-center justify-content-center footer-iso-container">
-                        <img src="./imagenes/iso4.png" alt="ISO 9001" class="img-fluid">
+                        <img loading="lazy" src="./imagenes/iso4.png" alt="ISO 9001" class="img-fluid">
                     </div>
                 </div>
 
@@ -418,7 +420,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="row align-items-center">
                 <div class="col-md-7 col-lg-8">
                     <p class="text-center text-md-start m-0">
-                        © 2026 <strong>Naves Del Sur S.A.</strong> Todos los derechos reservados.
+                        © <span class="copyright-year">2026</span> <strong>Naves Del Sur S.A.</strong> Todos los derechos reservados.
+                        <span class="d-none d-md-inline"> | </span><br class="d-md-none">
+                        Desarrollo Web: <a href="https://www.linkedin.com/in/valentinurcullu/" target="_blank" rel="noopener noreferrer" class="text-decoration-none fw-bold hover-link">Valentín Urcullú</a>
                     </p>
                 </div>
                 <div class="col-md-5 col-lg-4">
@@ -447,278 +451,3 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-<!--  <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naves Del Sur - Productos</title> 
-
-    <link href="./estilos/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link href="./estilos/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="./estilos/style.css">
-    <link rel="icon" href="./imagenes/favicon.png" type="image/png">
-</head>
-<body class="d-flex flex-column min-vh-100">
-
-      <header class="custom-header">
-        <nav class="custom-navbar">
-            <a href="index.html" class="custom-logo">
-                <img src="./imagenes/naves3.png" alt="Logo" class="logo-img">
-            </a>
-            <ul class="custom-nav-links" id="navLinks">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                
-                <li class="dropdown-item">
-                    <a href="productos.html" class="active-link">
-                        Productos <i class="fas fa-chevron-down ms-1" style="font-size: 0.7em;"></i>
-                    </a>
-                    <ul class="dropdown-menu-hover">
-                        <li><a href="./categorias/bombas-industriales.html">Industriales</a></li>
-                        <li><a href="./categorias/bombas-petroleras.html">Petroleras</a></li>
-                        <li><a href="./categorias/bombas-sanitarias.html">Sanitarias</a></li>
-                        <li><a href="./categorias/bombas-dosificadoras.html">Dosificadoras</a></li>
-                    </ul>
-                </li>
-                <li><a href="repuestos.html">Repuestos</a></li> 
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="clientes.html">Clientes</a></li>
-                
-                <li><a href="contacto.html" class="btn-nav-contacto">Contacto</a></li>
-
-                <li class="dropdown-item">
-    <a href="#" class="d-flex align-items-center">
-        <i class="fas fa-globe me-2"></i> ES <i class="fas fa-chevron-down ms-1"></i>
-    </a>
-    <ul class="dropdown-menu-hover"> 
-        <li><a href="#" class="fw-bold">Español</a></li>
-        <li><a href="./en/productos.html" style="opacity: 0.7;">English</a></li> </ul>
-</li>
-            </ul>
-            <button class="custom-menu-btn" id="mobile-menu">
-                <i class="fas fa-bars"></i>
-            </button>
-        </nav>
-    </header>
-
-    <header class="page-header page-header-clients">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <h1 data-aos="fade-down" data-aos-duration="1000">Línea de Productos</h1>
-                    <div class="section-divider bg-white mx-auto"></div>
-                    <p class="lead" data-aos="fade-up" data-aos-delay="200">
-                        Soluciones de bombeo GECE PUMPS® para cada industria
-                    </p>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <main class="container mb-5 py-4">
-        <div class="row justify-content-center text-center mb-5" data-aos="fade-up">
-            <div class="col-lg-8">
-                <h2 class="text-custom-blue fw-bold mb-3">Categorías Principales</h2>
-                <div class="section-divider mx-auto"></div>
-                <p class="text-muted fs-5">Fabricamos bombas a tornillo excéntrico robustas y confiables. Seleccione la categoría para ver las especificaciones técnicas completas.</p>
-            </div>
-        </div>
-
-        <div class="row row-cols-1 row-cols-md-2 g-4 g-lg-5">
-            
-            <div class="col" data-aos="fade-up" data-aos-delay="100">
-                <div class="card h-100 shadow-sm border-0 rounded-5 overflow-hidden product-category-card">
-                    <div class="product-img-wrapper">
-                        <img src="./imagenes/bombasImg/j2.jpeg" alt="Bombas Industriales">
-                        <div class="badge-floating text-white">
-                            <i class="fas fa-star me-1"></i> Más Vendido
-                        </div>
-                    </div>
-                    
-                    <div class="card-body p-4 p-lg-5 d-flex flex-column">
-                        <div class="product-icon-circle">
-                            <i class="fa-solid fa-industry fs-2"></i>
-                        </div>
-                        
-                        <h3 class="card-title h3 fw-bold text-dark mb-3">Bombas Industriales</h3>
-                        <p class="card-text text-muted mb-4 flex-grow-1">Diseñadas para el transporte de fluidos viscosos, abrasivos o con sólidos en suspensión. Ideales para papeleras, tratamiento de aguas y minería.</p>
-                        
-                        <a href="./categorias/bombas-industriales.html" class="btn btn-primary rounded-pill py-3 fw-bold stretched-link">
-                            Ver Modelos y Ficha <i class="fas fa-arrow-right ms-2"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col" data-aos="fade-up" data-aos-delay="200">
-                <div class="card h-100 shadow-sm border-0 rounded-5 overflow-hidden product-category-card">
-                    <div class="product-img-wrapper">
-                        <img src="./imagenes/bombasImg/NEA5.jpeg" alt="Bombas Petroleras">
-                    </div>
-                    <div class="card-body p-4 p-lg-5 d-flex flex-column">
-                        <div class="product-icon-circle">
-                            <i class="fa-solid fa-oil-well fs-2"></i>
-                        </div>
-                        <h3 class="card-title h3 fw-bold text-dark mb-3">Bombas Petroleras</h3>
-                        <p class="card-text text-muted mb-4 flex-grow-1">Sistemas BCP de superficie y de fondo para la extracción y transferencia de crudo. Alta eficiencia en condiciones extremas y pozos difíciles.</p>
-                        
-                        <a href="./categorias/bombas-petroleras.html" class="btn btn-primary rounded-pill py-3 fw-bold stretched-link">
-                            Ver Modelos y Ficha <i class="fas fa-arrow-right ms-2"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col" data-aos="fade-up" data-aos-delay="300">
-                <div class="card h-100 shadow-sm border-0 rounded-5 overflow-hidden product-category-card">
-                    <div class="product-img-wrapper">
-                        <img src="./imagenes/bombasImg/ffa1.jpeg" alt="Bombas Sanitarias">
-                    </div>
-                    <div class="card-body p-4 p-lg-5 d-flex flex-column">
-                        <div class="product-icon-circle">
-                            <i class="fa-solid fa-hand-holding-droplet fs-2"></i>
-                        </div>
-                        <h3 class="card-title h3 fw-bold text-dark mb-3">Bombas Sanitarias</h3>
-                        <p class="card-text text-muted mb-4 flex-grow-1">Fabricadas en acero inoxidable con acabado sanitario. Limpieza CIP/SIP para industrias alimenticias, bebidas y farmacéuticas.</p>
-                        
-                        <a href="./categorias/bombas-sanitarias.html" class="btn btn-primary rounded-pill py-3 fw-bold stretched-link">
-                            Ver Modelos y Ficha <i class="fas fa-arrow-right ms-2"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col" data-aos="fade-up" data-aos-delay="400">
-                <div class="card h-100 shadow-sm border-0 rounded-5 overflow-hidden product-category-card">
-                    <div class="product-img-wrapper">
-                        <img src="./imagenes/bombasImg/anp1.jpeg" alt="Bombas Dosificadoras">
-                    </div>
-                    <div class="card-body p-4 p-lg-5 d-flex flex-column">
-                        <div class="product-icon-circle">
-                            <i class="fa-solid fa-flask fs-2"></i>
-                        </div>
-                        <h3 class="card-title h3 fw-bold text-dark mb-3">Bombas Dosificadoras</h3>
-                        <p class="card-text text-muted mb-4 flex-grow-1">Precisión milimétrica para la inyección de químicos y aditivos. Caudales bajos y control exacto para procesos críticos.</p>
-                        
-                        <a href="./categorias/bombas-dosificadoras.html" class="btn btn-primary rounded-pill py-3 fw-bold stretched-link">
-                            Ver Modelos y Ficha <i class="fas fa-arrow-right ms-2"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </main>
-
-    <footer class="bg-dark text-white pt-5 pb-3 mt-auto">
-        <div class="container text-center text-lg-start">
-            <div class="row align-items-start">
-                
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center justify-content-lg-start">
-                    <a href="index.html" class="text-decoration-none w-100">
-                        <img src="./imagenes/naves2.png" alt="Naves del Sur" class="footer-logo-mega">
-                    </a>
-                </div>
-
-                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
-                    <h5 class="text-uppercase mb-4 fw-bold">Menú</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="index.html" class="text-white text-decoration-none footer-link">Inicio</a></li>
-                        <li class="mb-2"><a href="nosotros.html" class="text-white text-decoration-none footer-link">Nosotros</a></li>
-                        <li class="mb-2"><a href="servicios.html" class="text-white text-decoration-none footer-link">Servicios</a></li>
-                        <li class="mb-2"><a href="clientes.html" class="text-white text-decoration-none footer-link">Clientes</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
-                    <h5 class="text-uppercase mb-4 fw-bold">Productos</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="./categorias/bombas-industriales.html" class="text-white text-decoration-none footer-link">Industriales</a></li>
-                        <li class="mb-2"><a href="./categorias/bombas-petroleras.html" class="text-white text-decoration-none footer-link">Petroleras</a></li>
-                        <li class="mb-2"><a href="./categorias/bombas-sanitarias.html" class="text-white text-decoration-none footer-link">Sanitarias</a></li>
-                        <li class="mb-2"><a href="./categorias/bombas-dosificadoras.html" class="text-white text-decoration-none footer-link">Dosificadoras</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                    <h5 class="text-uppercase mb-4 fw-bold">Contacto</h5>
-                    
-                    <div class="d-flex align-items-start mb-3">
-                        <div style="width: 25px; flex-shrink: 0;">
-                            <i class="fas fa-home text-primary"></i>
-                        </div>
-                        <span class="small text-white-50 text-start">Francisco Cafferata 3294, Burzaco</span>
-                    </div>
-
-                    <div class="d-flex align-items-center mb-3">
-                        <div style="width: 25px; flex-shrink: 0;">
-                            <i class="fas fa-envelope text-primary"></i>
-                        </div>
-                        <span class="small text-white-50">ventas@navesdelsur.com</span>
-                    </div>
-
-                    <div class="d-flex align-items-center mb-3">
-                        <div style="width: 25px; flex-shrink: 0;">
-                            <i class="fas fa-phone text-primary"></i>
-                        </div>
-                        <span class="small text-white-50">(011) 2124-2028</span>
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-md-12 mb-4 mb-lg-0 d-flex flex-column align-items-center align-items-lg-end gap-3">
-                    <img src="./imagenes/madeInArgentina.png" alt="Hecho en Argentina" class="img-fluid footer-cert-img">
-                    <div class="d-flex align-items-center justify-content-center footer-iso-container">
-                        <img src="./imagenes/iso4.png" alt="ISO 9001" class="img-fluid">
-                    </div>
-                </div>
-
-            </div>
-            
-            <hr class="mb-4 border-secondary">
-            <div class="row align-items-center">
-                <div class="col-md-7 col-lg-8">
-                    <p class="text-center text-md-start m-0">
-                        © 2026 <strong>Naves Del Sur S.A.</strong> Todos los derechos reservados.
-                    </p>
-                </div>
-                <div class="col-md-5 col-lg-4">
-                    <div class="text-center text-md-end mt-3 mt-md-0 d-flex justify-content-center justify-content-md-end gap-3">
-                        <a href="https://www.linkedin.com/company/naves-del-sur-s-a/" class="text-white social-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://www.instagram.com/navesdelsur/?hl=es-la" class="text-white social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <a href="https://wa.me/5491139047389?text=Hola%20Naves%20Del%20Sur,%20quisiera%20consultar%20por%20una%20bomba..." class="btn-whatsapp" target="_blank" title="Chatear con un vendedor">
-    <i class="fab fa-whatsapp"></i>
-</a>
-    <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="./js/script.js"></script>
-    <script src="./js/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 800, 
-        once: true,
-        offset: 100
-      });
-    </script>
-</body>
-</html> -->
